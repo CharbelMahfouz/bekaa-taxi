@@ -7,4 +7,4 @@ RUN npx nx build admin-panel --prod
 
 FROM nginx:1.21.4-alpine
 COPY ./.nginx/default.conf /etc/nginx/conf.d/default.conf
-COPY --from=build /app/dist/apps/admin-panel /usr/share/nginx/html
+COPY --from=build /apps/admin-panel /usr/share/nginx/html
