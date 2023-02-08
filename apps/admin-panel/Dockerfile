@@ -1,5 +1,5 @@
 FROM node:16.13.1-alpine AS build
-WORKDIR /beka-taxi
+WORKDIR /bekaa-taxi
 COPY ./package.json ./package-lock.json ./decorate-angular-cli.js ./angular.json ./nx.json ./tsconfig.base.json ./
 RUN npm i --force
 COPY ./apps/admin-panel ./apps/admin-panel
